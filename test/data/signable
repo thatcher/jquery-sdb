@@ -1,0 +1,25 @@
+GET\n
+sdb.amazonaws.com\n
+/\n
+AWSAccessKeyId=AKIAJNP3TVAGI3KITLLQ
+&Action=ListDomains
+&Timestamp=2009-06-11T22%3A47%3A59.000Z
+&Version=2007-11-07
+
+GET\n
+sdb.amazonaws.com\n
+/\n
+AWSAccessKeyId=<Your AWS Access Key ID>
+&Action=PutAttributes
+&Attribute.1.Name=Color
+&Attribute.1.Value=Blue
+&Attribute.2.Name=Size
+&Attribute.2.Value=Med
+&Attribute.3.Name=Price
+&Attribute.3.Value=0014.99
+&DomainName=MyDomain
+&ItemName=Item123
+&SignatureMethod=HmacSHA256
+&SignatureVersion=2
+&Timestamp=2007-06-25T15%3A01%3A28-07%3A00
+&Version=2007-11-07

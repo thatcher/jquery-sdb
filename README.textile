@@ -1,3 +1,25 @@
-work in progress 
+In order to run the unit tests or to use in a development environment,
+you will need to provide a Amazon Web Services access key and secret key.
 
-if you are interested in early releases let me know.
+for the client specs you will need to create a file called
+
+.aws.js in the plugins folder
+
+that has the following Amazon Service values for your AWS Acouunt:
+
+var AWS = {
+    accessKeyId:'YOU ADD YOURS HERE',
+    secretKey:'YOU ADD YOURS HERE'
+};
+
+similarly to enable the server side use create this file in the WEB-INF/jsx/app.
+
+in each of the *-spec,js files, and/or if you are using the serverside
+implementation, you must provide them in WEB-INF/jsx/app/configs/environments.js
+
+These are actually in pretty good working order and I've been meaning to publish
+but I had to clean out my personal AWS service codes before commiting to git.
+
+For all the spec, you must be running in tomcat or jetty or have your own server
+side proxy configured.  this folder can be dropped directly into tomcat/waebapps
+and will be ready to run.
